@@ -13,10 +13,10 @@ public class Secao {
     private Properties props = null;
     Session session = null;
 
-    public Secao(String email, String senha) {
+    public Secao(String email, String senha, boolean debug) {
         props = this.getPropertiesGmail();
         session = Session.getDefaultInstance(props, new AuthenticatorImpl(email, senha));
-        session.setDebug(true);
+        session.setDebug(debug);
     }
 
     public Session getSession() {

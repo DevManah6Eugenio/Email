@@ -9,7 +9,8 @@ public class Main {
     public static void main(String[] args) throws MessagingException {
 
         ConfMensagemEmail configuracaoMensagem = new ConfMensagemEmail();
-
+        configuracaoMensagem.setDebug(true);
+        
         //configuração do E-mail
         configuracaoMensagem.setRemetente("manasses.java@gmail.com");//remetente
         configuracaoMensagem.setSenhaEmail("");//senha

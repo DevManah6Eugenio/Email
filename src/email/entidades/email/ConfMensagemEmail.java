@@ -12,6 +12,7 @@ public class ConfMensagemEmail {
     private String remetente = null;
     private String destinatario = null;
     private String senhaEmail = null;
+    private boolean debug = false;
 
     public String getAssunto() {
         return assunto;
@@ -51,5 +52,13 @@ public class ConfMensagemEmail {
 
     public void setSenhaEmail(String senhaEmail) {
         this.senhaEmail = senhaEmail;
+    }
+
+    public boolean isDebug() {
+        return debug;
+    }
+
+    public void setDebug(boolean debug) {
+        this.debug = debug;
     }
 }

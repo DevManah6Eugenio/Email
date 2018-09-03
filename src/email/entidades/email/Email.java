@@ -16,12 +16,12 @@ public class Email {
 
     public Email(ConfMensagemEmail configuracao) {
         this.configuracao = configuracao;
-        this.secao = new Secao(configuracao.getRemetente(), configuracao.getSenhaEmail());
+        this.secao = new Secao(configuracao.getRemetente(), configuracao.getSenhaEmail(), configuracao.isDebug());
     }
 
     public void setConfiguracao(ConfMensagemEmail configuracao) {
         this.configuracao = configuracao;
-        this.setSecao(new Secao(this.configuracao.getRemetente(), this.configuracao.getSenhaEmail()));
+        this.setSecao(new Secao(this.configuracao.getRemetente(), this.configuracao.getSenhaEmail(), configuracao.isDebug()));
     }
 
     public void enviar() throws AddressException, MessagingException {

@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) throws MessagingException {
 
         ConfMensagemEmail configuracaoMensagem = new ConfMensagemEmail();
+        //para exibir mais informações
         configuracaoMensagem.setDebug(true);
         
         //configuração do E-mail

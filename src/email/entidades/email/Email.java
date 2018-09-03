@@ -24,16 +24,20 @@ public class Email {
         this.setSecao(new Secao(this.configuracao.getRemetente(), this.configuracao.getSenhaEmail(), configuracao.isDebug()));
     }
 
+    public ConfMensagemEmail getConfiguracao() {
+        return configuracao;
+    }
+    
     public void enviar() throws AddressException, MessagingException {
         Message message = new MimeMessage(this.secao.getSession());
-        message.setFrom(new InternetAddress(configuracao.getRemetente()));//Remetente
+        message.setFrom(new InternetAddress(this.configuracao.getRemetente()));//Remetente
 
         Address[] toUser = InternetAddress
-                .parse(configuracao.getDestinatario().trim().toLowerCase());//Destinatário(s)
+                .parse(this.configuracao.getDestinatario().trim().toLowerCase());//Destinatário(s)
 
         message.setRecipients(Message.RecipientType.TO, toUser);
-        message.setSubject(configuracao.getAssunto());//Assunto
-        message.setContent(configuracao.getMensagem(), "text/html");//mensagem
+        message.setSubject(this.configuracao.getAssunto());//Assunto
+        message.setContent(this.configuracao.getMensagem(), "text/html");//mensagem
         
 //        FileDataSource fds = new FileDataSource("/home/manasses/Downloads/sql1br.sql");
 //        message.setDataHandler(new DataHandler(fds));

@@ -1,8 +1,9 @@
-package email.entidades.email;
+package com.email.entidade;
 
 /**
  *
- * @author manasses Email manasses.java@gmail.com
+ * @author manasses 
+ * @Email manasses.java@gmail.com
  *
  */
 public class ConfMensagemEmail {

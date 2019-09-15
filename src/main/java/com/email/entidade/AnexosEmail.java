@@ -1,4 +1,4 @@
-package email.entidades.email;
+package com.email.entidade;
 
 import java.util.ArrayList;
 import java.util.Collection;

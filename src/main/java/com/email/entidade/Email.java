@@ -1,6 +1,6 @@
-package email.entidades.email;
+package com.email.entidade;
 
-import email.entidades.secao.Secao;
+import com.email.secao.Secao;
 import javax.mail.Address;
 import javax.mail.Message;
 import javax.mail.MessagingException;

@@ -1,4 +1,4 @@
-package email.entidades.secao;
+package com.email.secao;
 
 import javax.mail.Authenticator;
 import javax.mail.PasswordAuthentication;

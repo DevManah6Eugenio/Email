@@ -1,4 +1,4 @@
-package email.entidades.secao;
+package com.email.secao;
 
 import java.util.Properties;
 import javax.mail.Session;

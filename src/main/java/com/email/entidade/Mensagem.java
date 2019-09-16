@@ -6,14 +6,14 @@ package com.email.entidade;
  * @Email manasses.java@gmail.com
  *
  */
-public class ConfMensagemEmail {
+public class Mensagem {
 
     private String assunto = null;
     private String mensagem = null;
     private String remetente = null;
     private String destinatario = null;
-    private String senhaEmail = null;
-    private boolean debug = false;
+    
+    private Email email = null;
 
     public String getAssunto() {
         return assunto;
@@ -47,19 +47,11 @@ public class ConfMensagemEmail {
         this.destinatario = destinatario;
     }
 
-    public String getSenhaEmail() {
-        return senhaEmail;
+    public Email getEmail() {
+        return email;
     }
 
-    public void setSenhaEmail(String senhaEmail) {
-        this.senhaEmail = senhaEmail;
-    }
-
-    public boolean isDebug() {
-        return debug;
-    }
-
-    public void setDebug(boolean debug) {
-        this.debug = debug;
-    }
+    public void setEmail(Email email) {
+        this.email = email;
+    } 
 }

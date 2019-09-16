@@ -9,7 +9,7 @@ import javax.activation.FileDataSource;
 /**
  *
  * @author manasses
- * Email manasses.java@gmail.com
+ * @Email manasses.java@gmail.com
  *
  */
 

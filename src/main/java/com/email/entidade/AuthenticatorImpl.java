@@ -1,11 +1,12 @@
-package com.email.secao;
+package com.email.entidade;
 
 import javax.mail.Authenticator;
 import javax.mail.PasswordAuthentication;
 
 /**
  *
- * @author manasses Email manasses.java@gmail.com
+ * @author manasses 
+ * @Email manasses.java@gmail.com
  *
  */
 public class AuthenticatorImpl extends Authenticator {
